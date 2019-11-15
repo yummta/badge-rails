@@ -1,0 +1,7 @@
+<ul>
+  <% @users.map do |user|%>
+  <li><%= link_to user.name, "/users/#{user.id}" %></li>
+  <li><%= user.email %></li>
+  <br>
+  <% end %>
+</ul>
